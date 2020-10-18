@@ -4,8 +4,9 @@ Materials and problem sets for AU326 Digital Image Process in SJTU.
 
 problem set 01
 ==========
-* Question 1 to 6 are execises in reference books.
-
+Question 1 to 6 
+---
+Shown as execises in reference books.
 
 question 7
 ----
