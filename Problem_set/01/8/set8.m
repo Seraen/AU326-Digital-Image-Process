@@ -1,0 +1,30 @@
+clear;close all;clc;
+
+A=rgb2gray(imread('image8.jpg'));
+B=imnoise(A,'gaussian',0,0.01);  
+C=imnoise(A,'gaussian',0,0.03);  
+D=imnoise(A,'gaussian',0.2,0.01); 
+E=imnoise(A,'gaussian',0.2,0.03);  
+B1= fspecial('gaussian',[9,9],1); 
+B2 = imfilter(A,B1,'replicate');
+C1= fspecial('gaussian',[9,9],1); 
+C2 = imfilter(A,C1,'replicate');
+D1= fspecial('gaussian',[9,9],1); 
+D2 = imfilter(A,D1,'replicate');
+E1= fspecial('gaussian',[9,9],1); 
+E2 = imfilter(A,E1,'replicate');  
+
+subplot(5,3,1),imshow(A),title('The original image');
+subplot(5,3,2),imhist(A);
+subplot(5,3,4),imshow(B),title('mean value=0,variance=0.01');
+subplot(5,3,5),imhist(B);
+subplot(5,3,6),imshow(B2),title('Replica of the left polluted image');
+subplot(5,3,7),imshow(C),title('mean value=0,variance=0.03');
+subplot(5,3,8),imhist(C);
+subplot(5,3,9),imshow(C2),title('Replica of the left polluted image');
+subplot(5,3,10),imshow(D),title('mean value=0.2,variance=0.01');
+subplot(5,3,11),imhist(D);
+subplot(5,3,12),imshow(D2),title('Replica of the left polluted image');
+subplot(5,3,13),imshow(E),title('mean value=0.2,variance=0.03');
+subplot(5,3,14),imhist(E);
+subplot(5,3,15),imshow(E2),title('Replica of the left polluted image');
