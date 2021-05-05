@@ -1,5 +1,5 @@
 # AU326-digital-image-process
-Materials and problem sets for AU326 Digital Image Process in SJTU.
+Materials and problem sets for Digital Image Process in SJTU.
 
 
 problem set 01
