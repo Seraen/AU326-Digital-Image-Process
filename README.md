@@ -1,4 +1,4 @@
-# AU326-digital-image-process
+# digital-image-process
 Materials and problem sets for Digital Image Process in SJTU.
 
 
