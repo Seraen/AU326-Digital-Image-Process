@@ -38,4 +38,6 @@ Add different levels of Gaussian noises to a given image, observe the change of 
 * `myGaussianNoise.m` and `myGaussianFilter.m` implement my own functions to add Gaussian noise to the image and Filter on the polluted images. `processFile.m` call functions and present the results.
 
 
-
+problem set 04
+==========
+The last one is a final project, requiring us to determine the accurate position and draw a bounding box around the main board. 
